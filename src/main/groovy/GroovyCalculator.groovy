@@ -1,11 +1,12 @@
 println "Enter expression, like ((1+2*3)**4+5)/6"
 def input = System.in.newReader().readLine()
-//Using closure and gstring
+//Using class Eval which support math expression with unlimited arguments, brackets and specific operators
 def evalresult = Eval.me(input)
+//Using closure and gstring
 def result = {
     result -> println "Result is $result"
 }
-//Call closure, with class which support string expression with unlimited arguments, brackets and specific operators
+//Call closure with evalresult
 result(evalresult)
 
 //Using operator overloading. In this example we invert plus to minus
