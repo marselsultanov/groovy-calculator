@@ -3,11 +3,11 @@ def input = System.in.newReader().readLine()
 //Using class Eval which support math expression with unlimited arguments, brackets and specific operators
 def evalresult = Eval.me(input)
 //Using closure and gstring
-def result = {
+def closure = {
     result -> println "Result is $result"
 }
 //Call closure with evalresult
-result(evalresult)
+closure(evalresult)
 
 //Using operator overloading. In this example we invert plus to minus
 class Number {
