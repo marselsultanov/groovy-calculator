@@ -1,6 +1,6 @@
 println "Enter expression, like ((1+2*3)**4+5)/6"
 def input = System.in.newReader().readLine()
-//Using class Eval which support math expression with unlimited arguments, brackets and specific operators
+//Using class Eval, which support math expression with unlimited arguments, brackets and specific operators
 def evalresult = Eval.me(input)
 //Using closure and gstring
 def closure = {
